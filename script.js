@@ -168,12 +168,6 @@
             link.href = pdfUrl;
             link.download = 'Mensah William Wisdom CV.pdf';
             link.click();
-            
-            // For demo purposes, show an alert
-            alert('In a real application, this would download your resume PDF file. Please replace the pdfUrl variable with your actual PDF file path.');
-            
-            // Alternative: If you want to generate a PDF dynamically, you could use:
-            // window.print(); // This would open the print dialog
         }
 
 

@@ -77,7 +77,7 @@
             text-decoration: none;
             transition: color 0.3s;
             cursor: pointer;
-            padding: 0.5rem 0;
+            padding: 2rem 0;
         }
 
         .nav-links a:hover, 
@@ -181,7 +181,6 @@
 
             .social-links {
                 position: fixed;
-                bottom: 2rem;
                 left: 50%;
                 transform: translateX(-50%);
                 gap: 1.5rem;
@@ -308,76 +307,213 @@
             box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         /* Skills Section */
-        .skills-grid {
+       .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
         }
 
         .skill-card {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 1.5rem;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
             border-radius: 15px;
-            border: 2px solid;
-            transition: all 0.3s;
+            padding: 30px 25px;
+            border: 1px solid #333;
+            transition: all 0.3s ease;
+            position: relative;
+            aspect-ratio: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
             text-align: center;
         }
 
-        .skill-card.proficient { border-color: #00ff88; }
-        .skill-card.intermediate { border-color: #ffff00; }
-        .skill-card.learning { border-color: #ff4444; }
-
         .skill-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: #00ff88;
+            box-shadow: 0 10px 30px rgba(0, 255, 55, 0.2);
         }
 
         .skill-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 20px;
+            fill: #00ff88;
+        }
+
+        .skill-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .skill-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+        }
+
+        .skill-category {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .skill-category:last-child {
+            margin-bottom: 0;
+        }
+
+        .skill-category-title {
+            font-weight: 600;
+            color: #ffffff;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .skill-list {
+            color: #ccc;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            padding: 60px 0;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .contact-item {
+            color: #888;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item:hover {
+            color: #00ff88;
+        }
+                .skill-icon {
             margin-bottom: 1rem;
             color: #ffffff;
         }
 
-        .skill-card.proficient .skill-icon {
-            color: #00ff88;
+
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .skill-card {
+                aspect-ratio: auto;
+                min-height: 300px;
+            }
         }
 
-        .skill-card.intermediate .skill-icon {
-            color: #ffff00;
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
         }
 
-        .skill-card.learning .skill-icon {
-            color: #ff4444;
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
-        .skill-card h3 {
-            margin-bottom: 0.5rem;
-            color: #ffffff;
-        }
 
-        .skill-level {
-            font-size: 0.9rem;
-            font-weight: bold;
-            padding: 0.2rem 0.5rem;
-            border-radius: 15px;
-            display: inline-block;
-        }
 
-        .proficient .skill-level {
-            background: rgba(0, 255, 136, 0.2);
-            color: #00ff88;
-        }
 
-        .intermediate .skill-level {
-            background: rgba(255, 255, 0, 0.2);
-            color: #ffff00;
-        }
 
-        .learning .skill-level {
-            background: rgba(255, 68, 68, 0.2);
-            color: #ff4444;
-        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         /* Experience Section */
         .download-section {
